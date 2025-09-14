@@ -186,7 +186,7 @@ a:hover {
     /* Dark mode toggle positioning for mobile */
     .dark-mode-toggle {
         top: 15px !important;
-        left: 15px !important;
+        right: 120px !important;
         width: 35px !important;
         height: 35px !important;
         font-size: 14px !important;

@@ -145,7 +145,7 @@ function addDarkModeToggle() {
     Object.assign(darkModeToggle.style, {
         position: 'fixed',
         top: '20px',
-        left: '20px',
+        right: '140px',
         width: '40px',
         height: '40px',
         borderRadius: '50%',

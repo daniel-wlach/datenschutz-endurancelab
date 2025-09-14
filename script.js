@@ -315,6 +315,156 @@ const darkModeCSS = `
     [data-theme="dark"] .footer {
         background-color: #1a202c;
     }
+
+    /* Delete Account Page Dark Mode Styles */
+    [data-theme="dark"] .navigation {
+        background-color: #2d3748;
+        border-left-color: #81c784;
+    }
+
+    [data-theme="dark"] .nav-link {
+        color: #81c784;
+    }
+
+    [data-theme="dark"] .nav-link:hover {
+        color: #68d391;
+    }
+
+    [data-theme="dark"] .warning-box {
+        background-color: #2d1b1b;
+        border-color: #e53e3e;
+        border-left-color: #e53e3e;
+    }
+
+    [data-theme="dark"] .warning-box h2 {
+        color: #fc8181;
+    }
+
+    [data-theme="dark"] .warning-box p {
+        color: #fed7d7;
+    }
+
+    [data-theme="dark"] .step {
+        background-color: #2d3748;
+        border-left-color: #81c784;
+    }
+
+    [data-theme="dark"] .step-number {
+        background-color: #81c784;
+        color: #1a202c;
+    }
+
+    [data-theme="dark"] .step-content h3 {
+        color: #e2e8f0;
+    }
+
+    [data-theme="dark"] .step-content p {
+        color: #a0aec0;
+    }
+
+    [data-theme="dark"] .data-category:first-child {
+        background-color: #1a2e1a;
+        border-color: #38a169;
+    }
+
+    [data-theme="dark"] .data-category:first-child h3 {
+        color: #68d391;
+    }
+
+    [data-theme="dark"] .data-category:last-child {
+        background-color: #2d1b1b;
+        border-color: #e53e3e;
+    }
+
+    [data-theme="dark"] .data-category:last-child h3 {
+        color: #fc8181;
+    }
+
+    [data-theme="dark"] .data-category {
+        background-color: #2d3748;
+        border-color: #4a5568;
+    }
+
+    [data-theme="dark"] .data-category h3 {
+        color: #e2e8f0;
+    }
+
+    [data-theme="dark"] .data-category p,
+    [data-theme="dark"] .data-category li {
+        color: #a0aec0;
+    }
+
+    [data-theme="dark"] .tech-details {
+        background-color: #2d3748;
+        border-left-color: #81c784;
+    }
+
+    [data-theme="dark"] .tech-details h3 {
+        color: #e2e8f0;
+    }
+
+    [data-theme="dark"] .tech-details p,
+    [data-theme="dark"] .tech-details li {
+        color: #a0aec0;
+    }
+
+    [data-theme="dark"] .contact-method {
+        background-color: #2d3748;
+        border-left-color: #68d391;
+    }
+
+    [data-theme="dark"] .contact-method h3 {
+        color: #e2e8f0;
+    }
+
+    [data-theme="dark"] .contact-method p {
+        color: #a0aec0;
+    }
+
+    [data-theme="dark"] .legal-info {
+        background-color: #2d3748;
+        border-left-color: #81c784;
+    }
+
+    [data-theme="dark"] .legal-info h3 {
+        color: #e2e8f0;
+    }
+
+    [data-theme="dark"] .legal-info p,
+    [data-theme="dark"] .legal-info li {
+        color: #a0aec0;
+    }
+
+    [data-theme="dark"] .faq-item {
+        background-color: #2d3748;
+        border-left-color: #68d391;
+    }
+
+    [data-theme="dark"] .faq-item h3 {
+        color: #e2e8f0;
+    }
+
+    [data-theme="dark"] .faq-item p {
+        color: #a0aec0;
+    }
+
+    [data-theme="dark"] .final-warning {
+        background-color: #2d1b1b;
+        border-color: #e53e3e;
+        border-left-color: #e53e3e;
+    }
+
+    [data-theme="dark"] .final-warning h2 {
+        color: #fc8181;
+    }
+
+    [data-theme="dark"] .final-warning p {
+        color: #fed7d7;
+    }
+
+    [data-theme="dark"] .final-warning ul {
+        color: #fed7d7;
+    }
 `;
 
 // Inject dark mode CSS

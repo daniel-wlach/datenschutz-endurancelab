@@ -182,6 +182,23 @@ a:hover {
     .main {
         padding: 2rem 0;
     }
+    
+    /* Dark mode toggle positioning for mobile */
+    .dark-mode-toggle {
+        top: 15px !important;
+        left: 15px !important;
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 14px !important;
+    }
+    
+    /* Print button positioning for mobile */
+    .print-button {
+        top: 15px !important;
+        right: 15px !important;
+        padding: 8px 12px !important;
+        font-size: 12px !important;
+    }
 }
 
 @media (max-width: 480px) {

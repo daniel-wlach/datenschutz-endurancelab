@@ -145,7 +145,7 @@ function addDarkModeToggle() {
     Object.assign(darkModeToggle.style, {
         position: 'fixed',
         top: '20px',
-        right: '120px',
+        left: '20px',
         width: '40px',
         height: '40px',
         borderRadius: '50%',
@@ -169,6 +169,17 @@ function addDarkModeToggle() {
         localStorage.setItem('theme', newTheme);
         
         this.innerHTML = newTheme === 'dark' ? '☀️' : '🌙';
+    });
+
+    // Hover effects for dark mode toggle
+    darkModeToggle.addEventListener('mouseenter', function() {
+        this.style.backgroundColor = '#2d3748';
+        this.style.transform = 'scale(1.1)';
+    });
+
+    darkModeToggle.addEventListener('mouseleave', function() {
+        this.style.backgroundColor = '#4a5568';
+        this.style.transform = 'scale(1)';
     });
 }
 

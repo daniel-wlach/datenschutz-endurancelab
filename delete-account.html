@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konto-Löschung - EnduranceLab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>EnduranceLab</h1>
+                <p class="tagline">Konto-Löschung</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <div class="navigation">
+                    <a href="index.html" class="nav-link">← Zurück zur Datenschutzerklärung</a>
+                </div>
+
+                <div class="warning-box">
+                    <h2>⚠️ Wichtiger Hinweis</h2>
+                    <p>Die Löschung Ihres Kontos ist <strong>unwiderruflich</strong>. Alle Ihre Daten werden permanent entfernt und können nicht wiederhergestellt werden.</p>
+                </div>
+
+                <section class="section">
+                    <h2>Konto-Löschung für EnduranceLab</h2>
+                    <p>Sie können Ihr EnduranceLab-Konto und alle zugehörigen Daten jederzeit löschen. Diese Seite erklärt Ihnen, wie Sie das tun können und welche Daten betroffen sind.</p>
+                </section>
+
+                <section class="section">
+                    <h2>Schritt-für-Schritt Anleitung</h2>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>In der App anmelden</h3>
+                                <p>Öffnen Sie die EnduranceLab App und melden Sie sich mit Ihren Anmeldedaten an.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Zur Profil-Seite navigieren</h3>
+                                <p>Tippen Sie auf das Profil-Symbol oder navigieren Sie zur Profil-Seite in der App.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Einstellungen öffnen</h3>
+                                <p>Wählen Sie "Einstellungen" oder das Zahnrad-Symbol aus.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Konto löschen auswählen</h3>
+                                <p>Scrollen Sie nach unten und wählen Sie "Konto löschen" aus.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h3>Bestätigung</h3>
+                                <p>Lesen Sie die Warnung sorgfältig durch und bestätigen Sie die Löschung durch Eingabe Ihres Passworts.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">6</div>
+                            <div class="step-content">
+                                <h3>Automatische Löschung</h3>
+                                <p>Alle Ihre Daten werden automatisch und permanent gelöscht. Sie erhalten eine Bestätigungs-E-Mail.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Welche Daten werden gelöscht?</h2>
+                    <div class="data-categories">
+                        <div class="data-category">
+                            <h3>✅ Vollständig gelöscht</h3>
+                            <ul>
+                                <li><strong>Kontodaten:</strong> Benutzername, E-Mail-Adresse, Name, Profilbild</li>
+                                <li><strong>Trainingsdaten:</strong> Alle Trainings, Zeiten, Distanzen, Notizen</li>
+                                <li><strong>Wettkampfdaten:</strong> Alle Wettkämpfe, Zielzeiten, Pace-Berechnungen</li>
+                                <li><strong>App-Einstellungen:</strong> Präferenzen, Synchronisationseinstellungen</li>
+                                <li><strong>Lokale Daten:</strong> Alle auf dem Gerät gespeicherten Daten (AsyncStorage)</li>
+                                <li><strong>Authentifizierung:</strong> Login-Daten und Session-Tokens</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="data-category">
+                            <h3>❌ Keine Daten werden aufbewahrt</h3>
+                            <p>Gemäß DSGVO werden <strong>keine</strong> Ihrer Daten nach der Konto-Löschung aufbewahrt. Es erfolgt eine vollständige und unwiderrufliche Löschung aller personenbezogenen Daten.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Technische Details</h2>
+                    <div class="tech-details">
+                        <h3>Backend-Löschung</h3>
+                        <p>Die Löschung erfolgt über eine sichere Supabase Edge Function:</p>
+                        <ul>
+                            <li><strong>Methode:</strong> POST-Request mit Authentifizierung</li>
+                            <li><strong>Authentifizierung:</strong> Bearer Token (Session Token)</li>
+                            <li><strong>Datenbank:</strong> Alle Tabellen werden bereinigt (trainings, competitions, profiles, auth.users)</li>
+                            <li><strong>Lokale Daten:</strong> AsyncStorage wird vollständig geleert</li>
+                        </ul>
+                        
+                        <h3>Sicherheit</h3>
+                        <ul>
+                            <li>Nur authentifizierte Benutzer können ihr Konto löschen</li>
+                            <li>Passwort-Bestätigung erforderlich</li>
+                            <li>Sichere API-Verbindung (HTTPS/TLS)</li>
+                            <li>Automatische Session-Invalidierung</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Alternative Kontaktmöglichkeiten</h2>
+                    <p>Falls Sie Probleme bei der Konto-Löschung haben oder Fragen haben, können Sie uns direkt kontaktieren:</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <h3>📧 E-Mail-Support</h3>
+                            <p><a href="mailto:support@endurancelab.app">support@endurancelab.app</a></p>
+                            <p>Antwortzeit: Innerhalb von 24 Stunden</p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <h3>📱 In-App-Support</h3>
+                            <p>Nutzen Sie die "Hilfe & Support" Funktion in der App</p>
+                            <p>Verfügbar in den Einstellungen</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Rechtliche Hinweise</h2>
+                    <div class="legal-info">
+                        <h3>DSGVO-Rechte</h3>
+                        <p>Die Konto-Löschung entspricht Ihrem <strong>Recht auf Löschung</strong> (Art. 17 DSGVO). Nach der Löschung haben Sie folgende Rechte:</p>
+                        <ul>
+                            <li>Bestätigung der Löschung</li>
+                            <li>Information über gelöschte Datenkategorien</li>
+                            <li>Nachweis der Löschung (falls erforderlich)</li>
+                        </ul>
+                        
+                        <h3>Widerruf</h3>
+                        <p><strong>Wichtig:</strong> Die Konto-Löschung ist unwiderruflich. Sobald Sie bestätigt haben, können Ihre Daten nicht wiederhergestellt werden.</p>
+                        
+                        <h3>Datenportabilität</h3>
+                        <p>Falls Sie Ihre Daten vor der Löschung exportieren möchten, können Sie dies in den App-Einstellungen unter "Daten exportieren" tun.</p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Häufig gestellte Fragen</h2>
+                    <div class="faq">
+                        <div class="faq-item">
+                            <h3>Wie lange dauert die Löschung?</h3>
+                            <p>Die Löschung erfolgt sofort nach der Bestätigung. Alle Daten werden innerhalb von 24 Stunden vollständig entfernt.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>Was passiert mit meinen Premium-Abonnements?</h3>
+                            <p>Premium-Abonnements werden automatisch gekündigt. Erstattungen erfolgen über den App Store/Play Store.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>Kann ich mein Konto wiederherstellen?</h3>
+                            <p>Nein, die Löschung ist unwiderruflich. Sie müssen ein neues Konto erstellen, falls Sie die App erneut nutzen möchten.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>Werden meine Daten an Dritte weitergegeben?</h3>
+                            <p>Nein, Ihre Daten werden nur für die Löschung verwendet und nicht an Dritte weitergegeben.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="final-warning">
+                    <h2>⚠️ Letzte Warnung</h2>
+                    <p>Bevor Sie Ihr Konto löschen, stellen Sie sicher, dass Sie:</p>
+                    <ul>
+                        <li>Alle wichtigen Trainingsdaten exportiert haben</li>
+                        <li>Ihre Premium-Abonnements gekündigt haben</li>
+                        <li>Verstanden haben, dass die Löschung unwiderruflich ist</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 EnduranceLab. Alle Rechte vorbehalten.</p>
+            <p><a href="index.html">Zurück zur Datenschutzerklärung</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

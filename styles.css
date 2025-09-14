@@ -75,6 +75,22 @@ body {
     text-decoration: underline;
 }
 
+.delete-link {
+    color: #ef4444 !important;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid #ef4444;
+    transition: all 0.2s ease;
+}
+
+.delete-link:hover {
+    color: #dc2626 !important;
+    background-color: #fef2f2;
+    padding: 2px 4px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
 /* Section Styles */
 .section {
     margin-bottom: 2.5rem;
@@ -275,5 +291,272 @@ button:focus {
     
     .meta-info {
         border-left-color: #000;
+    }
+}
+
+/* Delete Account Page Styles */
+.navigation {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.nav-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #5a67d8;
+    text-decoration: underline;
+}
+
+.warning-box {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid #ef4444;
+}
+
+.warning-box h2 {
+    color: #dc2626;
+    margin-bottom: 1rem;
+    border: none;
+    padding: 0;
+}
+
+.warning-box p {
+    color: #7f1d1d;
+    margin: 0;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.step-number {
+    background: #667eea;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    margin: 0 0 0.5rem 0;
+    color: #2d3748;
+    font-size: 1.1rem;
+}
+
+.step-content p {
+    margin: 0;
+    color: #4a5568;
+}
+
+.data-categories {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.data-category {
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.data-category h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.data-category:first-child {
+    background: #f0fdf4;
+    border-color: #bbf7d0;
+}
+
+.data-category:first-child h3 {
+    color: #166534;
+}
+
+.data-category:last-child {
+    background: #fef2f2;
+    border-color: #fecaca;
+}
+
+.data-category:last-child h3 {
+    color: #dc2626;
+}
+
+.tech-details {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.tech-details h3 {
+    margin: 1.5rem 0 1rem 0;
+    color: #2d3748;
+}
+
+.tech-details h3:first-child {
+    margin-top: 0;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.contact-method {
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    border-left: 4px solid #48bb78;
+}
+
+.contact-method h3 {
+    margin: 0 0 1rem 0;
+    color: #2d3748;
+    font-size: 1.1rem;
+}
+
+.contact-method p {
+    margin: 0.5rem 0;
+    color: #4a5568;
+}
+
+.legal-info {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.legal-info h3 {
+    margin: 1.5rem 0 1rem 0;
+    color: #2d3748;
+}
+
+.legal-info h3:first-child {
+    margin-top: 0;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.faq-item {
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    border-left: 4px solid #48bb78;
+}
+
+.faq-item h3 {
+    margin: 0 0 1rem 0;
+    color: #2d3748;
+    font-size: 1.1rem;
+}
+
+.faq-item p {
+    margin: 0;
+    color: #4a5568;
+}
+
+.final-warning {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 4px solid #ef4444;
+    text-align: center;
+}
+
+.final-warning h2 {
+    color: #dc2626;
+    margin-bottom: 1rem;
+    border: none;
+    padding: 0;
+}
+
+.final-warning p {
+    color: #7f1d1d;
+    margin-bottom: 1rem;
+}
+
+.final-warning ul {
+    text-align: left;
+    display: inline-block;
+    color: #7f1d1d;
+}
+
+/* Responsive adjustments for delete page */
+@media (max-width: 768px) {
+    .steps {
+        gap: 1rem;
+    }
+    
+    .step {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-number {
+        align-self: center;
+    }
+    
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+    
+    .data-categories {
+        gap: 1rem;
+    }
+    
+    .faq {
+        gap: 1rem;
+    }
+    
+    .faq-item {
+        padding: 1rem;
+    }
+    
+    .final-warning {
+        padding: 1.5rem;
     }
 }

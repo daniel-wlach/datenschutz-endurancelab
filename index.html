@@ -14,7 +14,7 @@
         <div class="container">
             <div class="logo">
                 <h1>EnduranceLab</h1>
-                <p class="tagline">Datenschutzerklärung</p>
+                <p class="tagline" data-translate="privacy_tagline">Datenschutzerklärung</p>
             </div>
         </div>
     </header>
@@ -22,19 +22,33 @@
     <main class="main">
         <div class="container">
             <div class="content">
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="de">🇩🇪 DE</button>
+                    <button class="lang-btn" data-lang="en">🇺🇸 EN</button>
+                    <button class="lang-btn" data-lang="es">🇪🇸 ES</button>
+                    <button class="lang-btn" data-lang="fr">🇫🇷 FR</button>
+                </div>
+
+                <!-- Navigation -->
+                <div class="navigation">
+                    <a href="support.html" class="nav-link" data-translate="support">Support & Hilfe</a>
+                    <a href="delete-account.html" class="nav-link" data-translate="delete_account">Konto löschen</a>
+                </div>
+
                 <div class="meta-info">
-                    <p><strong>Stand:</strong> Januar 2025</p>
-                    <p><strong>Kontakt:</strong> <a href="mailto:support@endurancelab.app">support@endurancelab.app</a></p>
-                    <p><strong>Support:</strong> <a href="support.html" class="support-link">Hilfe & Support</a></p>
-                    <p><strong>Konto löschen:</strong> <a href="delete-account.html" class="delete-link">Konto und Daten löschen</a></p>
+                    <p><strong data-translate="responsible_date">Stand:</strong> Januar 2025</p>
+                    <p><strong data-translate="responsible_contact">Kontakt:</strong> <a href="mailto:support@endurancelab.app">support@endurancelab.app</a></p>
+                    <p><strong data-translate="support">Support:</strong> <a href="support.html" class="support-link" data-translate="support">Hilfe & Support</a></p>
+                    <p><strong data-translate="delete_account">Konto löschen:</strong> <a href="delete-account.html" class="delete-link" data-translate="delete_account">Konto und Daten löschen</a></p>
                 </div>
 
                 <section class="section">
-                    <h2>1. Verantwortlicher</h2>
-                    <p><strong>Daniel Wlach</strong><br>
-                    Projekt: EnduranceLab</p>
-                    <p>Kontakt: <a href="mailto:support@endurancelab.app">support@endurancelab.app</a></p>
-                    <p>Stand: Januar 2025</p>
+                    <h2 data-translate="responsible_title">1. Verantwortlicher</h2>
+                    <p><strong data-translate="responsible_name">Daniel Wlach</strong><br>
+                    <span data-translate="responsible_project">Projekt: EnduranceLab</span></p>
+                    <p><span data-translate="responsible_contact">Kontakt:</span> <a href="mailto:support@endurancelab.app">support@endurancelab.app</a></p>
+                    <p><span data-translate="responsible_date">Stand:</span> Januar 2025</p>
                 </section>
 
                 <section class="section">
@@ -255,5 +269,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="privacy-translations.js"></script>
 </body>
 </html>

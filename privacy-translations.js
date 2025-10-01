@@ -399,6 +399,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const langButtons = document.querySelectorAll('.lang-btn');
     const elements = document.querySelectorAll('[data-translate]');
     
+    // Debug: Log missing translations
+    console.log('Privacy translations loaded:', Object.keys(privacyTranslations));
+    console.log('Elements with data-translate:', elements.length);
+    
     // Set initial language
     let currentLang = 'de';
     
@@ -418,6 +422,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const key = element.dataset.translate;
             if (privacyTranslations[lang] && privacyTranslations[lang][key]) {
                 element.textContent = privacyTranslations[lang][key];
+            } else {
+                console.log('Missing translation for key:', key, 'in language:', lang);
             }
         });
         

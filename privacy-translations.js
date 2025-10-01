@@ -108,7 +108,52 @@ const privacyTranslations = {
         legal_contract: "Vertragserfüllung: Bereitstellung der App-Funktionen",
         legal_interest: "Berechtigtes Interesse: Verbesserung der App-Funktionen",
         legal_consent: "Einwilligung: Premium-Abonnements und erweiterte Features",
-        legal_technical: "Technische Notwendigkeit: Synchronisation und Offline-Funktionalität"
+        legal_technical: "Technische Notwendigkeit: Synchronisation und Offline-Funktionalität",
+        // Rights details
+        rights_text: "Sie haben das Recht:",
+        rights_info: "Auf Auskunft über Ihre gespeicherten Daten",
+        rights_correction: "Auf Berichtigung falscher oder unvollständiger Daten",
+        rights_deletion: "Auf Löschung Ihrer Daten (\"Recht auf Vergessenwerden\")",
+        rights_portability: "Auf Datenübertragbarkeit in einem strukturierten Format",
+        rights_objection: "Auf Widerspruch gegen die Verarbeitung",
+        rights_restriction: "Auf Einschränkung der Verarbeitung",
+        rights_complaint: "Beschwerde bei der zuständigen Aufsichtsbehörde",
+        // Deletion details
+        deletion_account: "Alle Daten werden bei Konto-Löschung permanent entfernt",
+        deletion_local: "Lokale Daten werden bei App-Deinstallation gelöscht",
+        deletion_weather: "Wetter-Cache wird automatisch nach 3 Tagen erneuert",
+        deletion_settings: "Sie können jederzeit Ihr Konto in den Einstellungen löschen",
+        deletion_subscription: "Abonnement-Daten werden nach Kündigung gelöscht",
+        deletion_logs: "Debug-Logs werden automatisch nach 30 Tagen gelöscht",
+        // Security details
+        security_encryption: "Alle Datenübertragungen sind verschlüsselt (HTTPS/TLS)",
+        security_api: "Datenbankzugriff ist durch sichere API-Keys geschützt",
+        security_local: "Lokale Daten sind nur auf Ihrem Gerät zugänglich",
+        security_isolated: "User-Daten sind isoliert und können nicht von anderen Usern eingesehen werden",
+        security_updates: "Regelmäßige Sicherheitsupdates der App",
+        security_passwords: "Passwörter werden verschlüsselt gespeichert",
+        security_tokens: "Session-Tokens werden sicher verwaltet",
+        // Premium details
+        premium_revenue: "RevenueCat sammelt Abonnement-Informationen",
+        premium_userid: "Ihre User-ID wird mit RevenueCat verknüpft",
+        premium_no_payment: "Keine Zahlungsinformationen werden von uns gespeichert",
+        premium_stores: "Alle Zahlungen erfolgen über App Store/Play Store",
+        premium_cancellation: "Abonnement-Kündigungen erfolgen über die Store-Plattformen",
+        // Cookies details
+        cookies_none: "Keine Cookies werden verwendet",
+        cookies_no_tracking: "Kein Tracking oder Profiling",
+        cookies_no_ads: "Keine Werbung von Drittanbietern",
+        cookies_no_analytics: "Keine Analytics-Tools",
+        cookies_logs: "Nur technische Logs für Fehlerbehebung",
+        // Contact details
+        contact_privacy: "Bei Fragen zum Datenschutz:",
+        contact_privacy_email: "E-Mail: info@endurancelab.app",
+        contact_support: "Für technischen Support:",
+        contact_support_email: "E-Mail: support@endurancelab.app",
+        contact_general: "Allgemeine Anfragen:",
+        contact_general_email: "E-Mail: info@endurancelab.app",
+        // Changes details
+        changes_text: "Diese Datenschutzerklärung kann bei Bedarf aktualisiert werden. Wesentliche Änderungen werden Ihnen über die App oder per E-Mail mitgeteilt. Die aktuelle Version ist immer in der App unter \"Profil → Datenschutzerklärung\" verfügbar."
     },
     en: {
         privacy_tagline: "Privacy Policy",
@@ -218,7 +263,52 @@ const privacyTranslations = {
         legal_contract: "Contract fulfillment: Provision of app functions",
         legal_interest: "Legitimate interest: Improvement of app functions",
         legal_consent: "Consent: Premium subscriptions and extended features",
-        legal_technical: "Technical necessity: Synchronization and offline functionality"
+        legal_technical: "Technical necessity: Synchronization and offline functionality",
+        // Rights details
+        rights_text: "You have the right to:",
+        rights_info: "Information about your stored data",
+        rights_correction: "Correction of incorrect or incomplete data",
+        rights_deletion: "Deletion of your data (\"Right to be forgotten\")",
+        rights_portability: "Data portability in a structured format",
+        rights_objection: "Objection to processing",
+        rights_restriction: "Restriction of processing",
+        rights_complaint: "Complaint to the competent supervisory authority",
+        // Deletion details
+        deletion_account: "All data is permanently removed when the account is deleted",
+        deletion_local: "Local data is deleted when the app is uninstalled",
+        deletion_weather: "Weather cache is automatically renewed after 3 days",
+        deletion_settings: "You can delete your account at any time in the settings",
+        deletion_subscription: "Subscription data is deleted after cancellation",
+        deletion_logs: "Debug logs are automatically deleted after 30 days",
+        // Security details
+        security_encryption: "All data transmissions are encrypted (HTTPS/TLS)",
+        security_api: "Database access is protected by secure API keys",
+        security_local: "Local data is only accessible on your device",
+        security_isolated: "User data is isolated and cannot be viewed by other users",
+        security_updates: "Regular security updates of the app",
+        security_passwords: "Passwords are stored encrypted",
+        security_tokens: "Session tokens are managed securely",
+        // Premium details
+        premium_revenue: "RevenueCat collects subscription information",
+        premium_userid: "Your user ID is linked with RevenueCat",
+        premium_no_payment: "No payment information is stored by us",
+        premium_stores: "All payments are made through App Store/Play Store",
+        premium_cancellation: "Subscription cancellations are made through the store platforms",
+        // Cookies details
+        cookies_none: "No cookies are used",
+        cookies_no_tracking: "No tracking or profiling",
+        cookies_no_ads: "No third-party advertising",
+        cookies_no_analytics: "No analytics tools",
+        cookies_logs: "Only technical logs for troubleshooting",
+        // Contact details
+        contact_privacy: "For privacy questions:",
+        contact_privacy_email: "Email: info@endurancelab.app",
+        contact_support: "For technical support:",
+        contact_support_email: "Email: support@endurancelab.app",
+        contact_general: "General inquiries:",
+        contact_general_email: "Email: info@endurancelab.app",
+        // Changes details
+        changes_text: "This privacy policy can be updated as needed. Significant changes will be communicated to you via the app or by email. The current version is always available in the app under \"Profile → Privacy Policy\"."
     },
     es: {
         privacy_tagline: "Política de Privacidad",

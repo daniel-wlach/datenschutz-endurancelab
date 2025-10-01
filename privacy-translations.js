@@ -153,7 +153,9 @@ const privacyTranslations = {
         contact_general: "Allgemeine Anfragen:",
         contact_general_email: "E-Mail: info@endurancelab.app",
         // Changes details
-        changes_text: "Diese Datenschutzerklärung kann bei Bedarf aktualisiert werden. Wesentliche Änderungen werden Ihnen über die App oder per E-Mail mitgeteilt. Die aktuelle Version ist immer in der App unter \"Profil → Datenschutzerklärung\" verfügbar."
+        changes_text: "Diese Datenschutzerklärung kann bei Bedarf aktualisiert werden. Wesentliche Änderungen werden Ihnen über die App oder per E-Mail mitgeteilt. Die aktuelle Version ist immer in der App unter \"Profil → Datenschutzerklärung\" verfügbar.",
+        // Additional missing keys
+        footer_terms: "Nutzungsbedingungen"
     },
     en: {
         privacy_tagline: "Privacy Policy",
@@ -308,7 +310,9 @@ const privacyTranslations = {
         contact_general: "General inquiries:",
         contact_general_email: "Email: info@endurancelab.app",
         // Changes details
-        changes_text: "This privacy policy can be updated as needed. Significant changes will be communicated to you via the app or by email. The current version is always available in the app under \"Profile → Privacy Policy\"."
+        changes_text: "This privacy policy can be updated as needed. Significant changes will be communicated to you via the app or by email. The current version is always available in the app under \"Profile → Privacy Policy\".",
+        // Additional missing keys
+        footer_terms: "Terms of Use"
     },
     es: {
         privacy_tagline: "Política de Privacidad",
@@ -399,9 +403,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const langButtons = document.querySelectorAll('.lang-btn');
     const elements = document.querySelectorAll('[data-translate]');
     
-    // Debug: Log missing translations
-    console.log('Privacy translations loaded:', Object.keys(privacyTranslations));
-    console.log('Elements with data-translate:', elements.length);
+    // Debug: Log missing translations (remove in production)
+    // console.log('Privacy translations loaded:', Object.keys(privacyTranslations));
+    // console.log('Elements with data-translate:', elements.length);
     
     // Set initial language
     let currentLang = 'de';
@@ -423,7 +427,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (privacyTranslations[lang] && privacyTranslations[lang][key]) {
                 element.textContent = privacyTranslations[lang][key];
             } else {
-                console.log('Missing translation for key:', key, 'in language:', lang);
+                // console.log('Missing translation for key:', key, 'in language:', lang);
             }
         });
         
